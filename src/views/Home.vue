@@ -16,18 +16,6 @@ export default {
     Moon,
   },
 };
-
-function loadHalloween() {
-  const trial = document.createElement('script');
-  trial.type = 'text/javascript';
-  trial.async = true;
-  trial.src =
-    'https://easy.myfonts.net/v2/js?sid=216109(font-family=ITC+Serif+Gothic+Std+Light)&sid=216111(font-family=ITC+Serif+Gothic+Std+Bold)&sid=216114(font-family=ITC+Serif+Gothic+Std+Roman)&key=ucXR7KX8zz';
-  const head = document.getElementsByTagName('head')[0];
-  head.appendChild(trial);
-}
-
-loadHalloween();
 </script>
 
 <style>
@@ -36,6 +24,12 @@ loadHalloween();
   40% { opacity: 100; }
   60%  { opacity: 100; }
   100% { opacity: 0; }
+}
+
+@font-face {
+  font-family: Halloween;
+  font-weight: bold;
+  src: url(../assets/fonts/halloween.woff);
 }
 
 .home {
@@ -53,7 +47,7 @@ loadHalloween();
 
 .title {
   color: orange;
-  font-family: 'ITC Serif Gothic Std Bold';
+  font-family: Halloween;
   font-size: 60px;
 }
 
