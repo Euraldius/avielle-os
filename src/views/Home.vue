@@ -2,7 +2,7 @@
   <div class="home">
     <div class="startup-screen">
       <Moon />
-      <h1>Wolfe Howls at Moon OS</h1>
+      <h1 class="title">Wolfe Howls at Moon OS</h1>
     </div>
   </div>
 </template>
@@ -16,6 +16,18 @@ export default {
     Moon,
   },
 };
+
+function loadHalloween() {
+  const trial = document.createElement('script');
+  trial.type = 'text/javascript';
+  trial.async = true;
+  trial.src =
+    'https://easy.myfonts.net/v2/js?sid=216109(font-family=ITC+Serif+Gothic+Std+Light)&sid=216111(font-family=ITC+Serif+Gothic+Std+Bold)&sid=216114(font-family=ITC+Serif+Gothic+Std+Roman)&key=ucXR7KX8zz';
+  const head = document.getElementsByTagName('head')[0];
+  head.appendChild(trial);
+}
+
+loadHalloween();
 </script>
 
 <style>
@@ -37,5 +49,11 @@ export default {
 
 .startup-screen {
   animation: startup 20s;
+}
+
+.title {
+  color: orange;
+  font-family: 'ITC Serif Gothic Std Bold';
+  font-size: 60px;
 }
 </style>
