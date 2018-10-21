@@ -2,7 +2,7 @@
   <div class="home">
     <div class="startup-screen">
       <Moon />
-      <h1 class="title">Wolfe Howls at Moon OS</h1>
+      <h1 class="title"><em>Wolfe Howls at Moon <span class="os">OS</span></em></h1>
     </div>
   </div>
 </template>
@@ -55,5 +55,9 @@ loadHalloween();
   color: orange;
   font-family: 'ITC Serif Gothic Std Bold';
   font-size: 60px;
+}
+
+.os {
+  font-size: 82px;
 }
 </style>
