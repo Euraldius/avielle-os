@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <StartupScreen v-bind:startupTime="startupTime" />
+    <StartupScreen v-if="startingUp" v-bind:startupTime="startupTime" />
   </div>
 </template>
 
@@ -15,8 +15,23 @@ export default {
     StartupScreen,
   },
   data: () => ({
+    secondsSinceLoad: 0,
     startupTime: STARTUP_TIME,
   }),
+  computed: {
+    startingUp: function startingUp() {
+      return this.secondsSinceLoad < STARTUP_TIME;
+    },
+  },
+  mounted: function startTimer() {
+    const interval = setInterval(() => {
+      if (this.startingUp) {
+        this.secondsSinceLoad += 1;
+      } else {
+        clearInterval(interval);
+      }
+    }, 1000);
+  },
 };
 </script>
 
