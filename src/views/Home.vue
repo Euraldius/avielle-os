@@ -3,6 +3,8 @@
     <div class="startup-screen">
       <Moon />
       <h1 class="title"><em>Wolfe Howls at Moon <span class="os">OS</span></em></h1>
+      <p>Version: 666</p>
+      <p>Ni dios, ni jefes, ni maridos</p>
     </div>
   </div>
 </template>
@@ -30,6 +32,10 @@ export default {
   font-family: Halloween;
   font-weight: bold;
   src: url(../assets/fonts/halloween.woff);
+}
+
+p {
+  color: #d1d0cf;
 }
 
 .home {
