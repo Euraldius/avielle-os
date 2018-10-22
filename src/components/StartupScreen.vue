@@ -1,5 +1,5 @@
 <template>
-  <div class="startup-screen">
+  <div class="startup-screen" v-bind:style="startupScreenStyles">
     <Moon />
     <h1 class="title"><em>Wolfe Howls at Moon <span class="os">OS</span></em></h1>
     <p>Version: 6.66</p>
@@ -14,6 +14,16 @@ export default {
   name: 'startup-screen',
   components: {
     Moon,
+  },
+  props: {
+    startupTime: Number,
+  },
+  data: function startupScreenStyles() {
+    return {
+      startupScreenStyles: {
+        animationDuration: `${this.startupTime}s`,
+      },
+    };
   },
 };
 </script>
@@ -37,11 +47,8 @@ p {
 }
 
 .startup-screen {
+  animation-name: startup;
   padding-top: 100px;
-}
-
-.startup-screen {
-  animation: startup 20s;
 }
 
 .title {
