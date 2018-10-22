@@ -1,10 +1,12 @@
 <template>
   <div class="home">
     <StartupScreen v-if="startingUp" v-bind:startupTime="startupTime" />
+    <HomeDirectory />
   </div>
 </template>
 
 <script>
+import HomeDirectory from '@/components/HomeDirectory.vue';
 import StartupScreen from '@/components/StartupScreen.vue';
 
 const STARTUP_TIME = 5; // seconds
@@ -12,6 +14,7 @@ const STARTUP_TIME = 5; // seconds
 export default {
   name: 'home',
   components: {
+    HomeDirectory,
     StartupScreen,
   },
   data: () => ({

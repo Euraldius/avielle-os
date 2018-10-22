@@ -49,6 +49,7 @@ p {
 .startup-screen {
   animation-name: startup;
   padding-top: 100px;
+  text-align: center;
 }
 
 .title {
