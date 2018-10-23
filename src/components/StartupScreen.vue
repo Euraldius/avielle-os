@@ -1,9 +1,9 @@
 <template>
   <div class="startup-screen" v-bind:style="startupScreenStyles">
     <Moon />
-    <h1 class="title"><em>Wolfe Howls at Moon <span class="os">OS</span></em></h1>
-    <p>Version: 6.66</p>
-    <p>Ni dios, ni jefes, ni maridos</p>
+    <h1 class="title">Wolfe Howls at Moon <span class="os">OS</span></h1>
+    <p><em>Version: 6.66</em></p>
+    <p><em>Ni dios, ni jefes, ni maridos</em></p>
   </div>
 </template>
 

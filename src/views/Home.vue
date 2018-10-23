@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <StartupScreen v-if="startingUp" v-bind:startupTime="startupTime" />
-    <HomeDirectory />
+    <HomeDirectory v-if="!startingUp" />
   </div>
 </template>
 
