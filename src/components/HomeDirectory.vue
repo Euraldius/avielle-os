@@ -1,7 +1,7 @@
 <template>
   <div class="home-directory-container">
     <div class="home-directory">
-      <p>Home Dir!</p>
+      <router-link to="/resume" class="directory-link">resume</router-link>
     </div>
   </div>
 </template>
@@ -14,9 +14,10 @@ export default {
 
 <style lang="scss">
 $fuschia: #FF00FF;
+$text-white: #d1d0cf;
 
-p {
-  color: #d1d0cf;
+.directory-link {
+  color: $text-white;
 }
 
 .home-directory-container {
@@ -26,7 +27,7 @@ p {
 .home-directory {
   background-color: rgba($fuschia, 0.2);
   border: $fuschia 1px solid;
-  box-shadow: 0px 0px 8px 18px rgba($fuschia, 0.5);
+  box-shadow: 10px -10px 5px 5px rgba($fuschia, 0.2);
   border-radius: 3px;
   height: 500px;
   padding: 50px;

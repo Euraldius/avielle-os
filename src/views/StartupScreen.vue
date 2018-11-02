@@ -8,22 +8,44 @@
 </template>
 
 <script>
+import router from '@/router';
 import Moon from '@/components/icons/Moon.vue';
+
+const STARTUP_TIME = 5; // seconds
 
 export default {
   name: 'startup-screen',
   components: {
     Moon,
   },
-  props: {
-    startupTime: Number,
-  },
   data: function startupScreenStyles() {
     return {
-      startupScreenStyles: {
-        animationDuration: `${this.startupTime}s`,
-      },
+      secondsSinceLoad: 0,
     };
+  },
+  computed: {
+    startingUp: function startingUp() {
+      return this.secondsSinceLoad < STARTUP_TIME;
+    },
+    startupScreenStyles: function startupScreenStyles() {
+      const display = this.startingUp ? 'inherit' : 'none';
+
+      return {
+        animationDuration: `${STARTUP_TIME}s`,
+        display,
+      };
+    },
+  },
+  mounted: function startTimer() {
+    const interval = setInterval(() => {
+      if (this.startingUp) {
+        this.secondsSinceLoad += 1;
+      } else {
+        clearInterval(interval);
+
+        router.push('home');
+      }
+    }, 1000);
   },
 };
 </script>
