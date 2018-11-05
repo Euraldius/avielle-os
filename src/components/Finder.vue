@@ -26,5 +26,6 @@ $fuschia: #FF00FF;
   border-radius: 3px;
   height: 500px;
   padding: 50px;
+  overflow: scroll;
 }
 </style>

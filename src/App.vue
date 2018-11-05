@@ -5,9 +5,12 @@
 </template>
 
 <style lang="scss">
+$text-white: #d1d0cf;
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $text-white;
 }
 </style>

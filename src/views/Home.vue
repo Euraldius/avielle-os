@@ -15,10 +15,5 @@ export default {
 };
 </script>
 
-<style lang="scss">
-$text-white: #d1d0cf;
-
-.directory-link {
-  color: $text-white;
-}
+<style scoped lang="scss">
 </style>
