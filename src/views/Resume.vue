@@ -104,6 +104,20 @@ $powder-blue: #d9fcfc;
 $eighties-ski-jacket: #00c9c9;
 $teal: #0eeded;
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+
 h2 {
   color: black;
   font-stretch: condensed;
