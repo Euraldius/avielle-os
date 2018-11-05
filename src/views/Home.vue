@@ -1,24 +1,21 @@
 <template>
   <finder>
-    <router-link to="/resume" class="directory-link">resume</router-link>
+    <resume />
   </finder>
 </template>
 
 <script>
 import Finder from '@/components/Finder.vue';
+import Resume from '@/views/Resume.vue';
 
 export default {
   name: 'home',
   components: {
     Finder,
+    Resume,
   },
 };
 </script>
 
-<style lang="scss">
-$text-white: #d1d0cf;
-
-.directory-link {
-  color: $text-white;
-}
+<style scoped lang="scss">
 </style>

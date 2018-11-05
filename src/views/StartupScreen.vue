@@ -50,7 +50,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/assets/styles/variables.scss';
+
 @keyframes startup {
   0% { opacity: 0; }
   40% { opacity: 100; }
@@ -77,10 +79,18 @@ p {
 .title {
   color: orange;
   font-family: Halloween;
-  font-size: 60px;
+  font-size: 1.2em;
+
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    font-size: 60px;
+  }
 }
 
 .os {
-  font-size: 82px;
+  font-size: 1.3em;
+
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    font-size: 82px;
+  }
 }
 </style>
