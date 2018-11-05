@@ -40,9 +40,10 @@
         </section>
       </section>
       <section class="main">
-      <header>
-          <h1>Name: Avielle Wolfe</h1>
-          <p>Employed as a web developer since: May, 2013</p>
+        <header class="header">
+          <h1>Avielle Wolfe</h1>
+          <h2>Professional web developer since:</h2>
+          <p>May, 2013</p>
         </header>
         <section>
           <h2>Points of interest</h2>
@@ -79,17 +80,61 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$text-grey: #383737;
+
 $fuschia: #FF00FF;
 $light-pink: #f7c3f7;
 $pink: #fc3598;
-$text-grey: #666666;
+
+$stolen-purple: #8800cc;
+$plum: #932afc;
+$lavender: #c997fc;
+
+h2 {
+  color: black;
+  font-stretch: condensed;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 .resume {
   display: grid;
+  color: $text-grey;
+}
+
+.header {
+  background: $lavender;
+  border: 1px solid $stolen-purple;
+  box-shadow: 5px 6px 0px $plum;
+  padding-left: 30px;
+  padding-bottom: 10px;
+
+  h1 {
+    color: $text-grey;
+    font-family: Halloween;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    src: url(../assets/fonts/halloween.woff);
+    text-decoration: underline;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    padding-bottom: 0px;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 10px;
+    margin: 0;
+  }
 }
 
 .sidebar {
   grid-column: 1;
+  margin-top: 50px;
   padding-right: 50px;
 }
 
@@ -102,15 +147,7 @@ $text-grey: #666666;
   border: 1px solid $fuschia;
   border-radius: 3px;
   box-shadow: 5px 6px 0px $pink;
-  color: $text-grey;
   padding: 10px 12px;
-
-  h2 {
-    color: black;
-    font-stretch: condensed;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
 
   ul {
     margin-top: 0;
