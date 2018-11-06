@@ -146,12 +146,12 @@ $eighties-ski-jacket: #00c9c9;
 $teal: #0eeded;
 
 a {
-  color: black;
+  color: $fuschia;
   text-decoration: none;
 }
 
 a:visited {
-  font-style: italic;
+  color: $stolen-purple;
 }
 
 a:hover {
