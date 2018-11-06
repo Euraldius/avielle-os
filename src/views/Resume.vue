@@ -74,7 +74,7 @@
               <li>Kickstarter</li>
               <li>Groupon</li>
               <li>Shutterstock</li>
-              <li>And more!</li>
+              <li><em>And more!</em></li>
             </ul>
           </section>
         </section>
