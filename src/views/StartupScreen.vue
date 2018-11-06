@@ -53,6 +53,8 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/styles/variables.scss';
 
+$text-white: #d1d0cf;
+
 @keyframes startup {
   0% { opacity: 0; }
   40% { opacity: 100; }
@@ -72,6 +74,7 @@ p {
 
 .startup-screen {
   animation-name: startup;
+  color: $text-white;
   padding-top: 100px;
   text-align: center;
 }
