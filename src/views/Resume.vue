@@ -4,14 +4,6 @@
       <section class="sidebar">
         <section class="stats">
           <section>
-            <h2>Employers</h2>
-            <ul>
-              <li>Libboo</li>
-              <li>thoughtbot</li>
-              <li>Stride</li>
-            </ul>
-          </section>
-          <section>
             <h2>Languages</h2>
             <ul>
               <li>Ruby</li>
@@ -25,26 +17,64 @@
             <ul>
               <li>Ruby on Rails</li>
               <li>Django</li>
-              <li>Node**</li>
-              <li>Laravel**</li>
+              <li>Node</li>
+              <li>Laravel</li>
             </ul>
           </section>
           <section>
             <h2>Web client frameworks</h2>
             <ul>
               <li>React</li>
-              <li>Angular**</li>
-              <li>Ember**</li>
+              <li>Vue</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Employers</h2>
+            <ul>
+              <li><a href="http://libboo.com/">Libboo</a></li>
+              <li><a href="http://thoughtbot.com">thoughtbot</a></li>
+              <li><a href="http://stridenyc.com">Stride </a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Clients</h2>
+            <ul>
+              <li>Planned Parenthood</li>
+              <li>Kickstarter</li>
+              <li>Groupon</li>
+              <li>Shutterstock</li>
+              <li>And more!</li>
             </ul>
           </section>
         </section>
       </section>
       <section class="main">
         <header class="header">
-          <h1>Avielle Wolfe</h1>
-          <p><a href="mailto:aviellewolfe@pm.me">aviellewolfe@pm.me</a></p>
-          <h2>Professional web developer since:</h2>
-          <p class="response">May, 2013</p>
+          <section>
+            <h1>Avielle Wolfe</h1>
+            <p><a href="mailto:aviellewolfe@pm.me">aviellewolfe@pm.me</a></p>
+          </section>
+          <section>
+            <p>
+              I've spent <strong>{{ timeAsDeveloper }}</strong> working as a web developer.
+            </p>
+            <p>
+              I've worked for <strong>3</strong> employers.<br/>
+              <strong>2</strong> of those were consultancies.<br/>
+              Between the two, I've worked with <strong>15</strong> clients.
+            </p>
+            <p>
+              I'm practiced in <strong>Agile development</strong>, <strong>TDD</strong>, and <strong>XP</strong>.<br/>
+              I believe in applying them pragmatically.<br/>
+              Above all, I believe in the Agile mantra:<br/>
+              <em>People over process!</em>
+            </p>
+            <p>
+              I believe in making applications by considering user input,<br/>
+              By protecting users' <em>security</em> and <em>privacy</em>,<br/>
+              And by keeping our technology choices simple for the sake of future developers.
+            </p>
+          </section>
         </header>
         <section class="points-of-interest">
           <h2>Points of interest</h2>
@@ -79,12 +109,21 @@
 </template>
 
 <script>
+import moment from 'moment';
 import Finder from '@/components/Finder.vue';
 
 export default {
   name: 'resume',
   components: {
     Finder,
+  },
+  computed: {
+    timeAsDeveloper: function timeAsDeveloper() {
+      const firstMonthAsDeveloper = new Date(2013, 6);
+      const now = moment();
+
+      return now.from(firstMonthAsDeveloper, true);
+    },
   },
 };
 </script>
@@ -130,6 +169,10 @@ h3 {
   font-stretch: condensed;
 }
 
+li {
+  list-style: none;
+}
+
 .resume {
   display: grid;
   color: $text-grey;
@@ -140,8 +183,7 @@ h3 {
   border: 1px solid $stolen-purple;
   border-radius: 3px;
   box-shadow: 5px 6px 0px $plum;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 
   h1 {
     color: $text-grey;
@@ -156,13 +198,6 @@ h3 {
   h2 {
     font-size: 1.2em;
     padding-bottom: 0px;
-  }
-
-  .response {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-left: 10px;
-    margin: 0;
   }
 }
 
@@ -189,7 +224,6 @@ h3 {
   }
 
   li {
-    list-style: none;
     line-height: 1.6em;
   }
 }
