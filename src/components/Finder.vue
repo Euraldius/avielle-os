@@ -11,8 +11,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/variables.scss';
+
 .finder {
-  padding: 20px;
-  overflow: scroll;
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    padding: 20px;
+  }
 }
 </style>
