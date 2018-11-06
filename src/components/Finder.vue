@@ -17,5 +17,10 @@ export default {
   @media only screen and (min-width: $mid-size-device-breakpoint) {
     padding: 20px;
   }
+
+  @media only screen and (min-width: $large-device-breakpoint) {
+    margin: 0 auto;
+    width: 50%;
+  }
 }
 </style>
