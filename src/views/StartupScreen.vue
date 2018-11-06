@@ -1,9 +1,9 @@
 <template>
   <div class="startup-screen" v-bind:style="startupScreenStyles">
     <Moon />
-    <h1 class="title">Wolfe Howls at Moon <span class="os">OS</span></h1>
-    <p><em>Version: 6.66</em></p>
-    <p><em>Ni dios, ni jefes, ni maridos</em></p>
+    <h1 id="halloween-title">Wolfe Howls at Moon <span class="os">OS</span></h1>
+    <h2><em>Version: 6.66</em></h2>
+    <h2><em>Ni dios, ni jefes, ni maridos</em></h2>
   </div>
 </template>
 
@@ -76,7 +76,7 @@ p {
   text-align: center;
 }
 
-.title {
+#halloween-title {
   color: orange;
   font-family: Halloween;
   font-size: 1.2em;
