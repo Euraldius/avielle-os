@@ -60,11 +60,13 @@
             </p>
             <p>
               I've worked for <strong>3</strong> employers.<br/>
-              <strong>2</strong> of those were consultancies.<br/>
+              <strong>2</strong> of those are consultancies.<br/>
               Between the two, I've worked with <strong>15</strong> clients.
             </p>
             <p>
-              I'm practiced in <strong>Agile development</strong>, <strong>TDD</strong>, and <strong>XP</strong>.<br/>
+              I'm practiced in <strong>Agile development</strong>,
+              <strong>TDD</strong>,
+              and <strong>XP</strong>.<br/>
               I believe in applying them pragmatically.<br/>
               Above all, I believe in the Agile mantra:<br/>
               <em>People over process!</em>
