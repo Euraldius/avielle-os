@@ -90,7 +90,7 @@
           <p>
             I authored thoughtbot's <a href="https://robots.thoughtbot.com/reaction-to-executive-order-13769">response to Executive Order 13769</a>.
             It was published anonymously to protect me from the less tolerant parts of
-            the Internet. (Verification can be provided up request.)
+            the Internet. (Verification can be provided upon request.)
           </p>
         </section>
         <section>
