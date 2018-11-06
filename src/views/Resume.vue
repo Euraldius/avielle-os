@@ -28,23 +28,27 @@
               <li>Vue</li>
             </ul>
           </section>
+        </section>
+        <section class="employment">
           <section>
-            <h2>Employers</h2>
-            <ul>
-              <li><a href="http://libboo.com/">Libboo</a></li>
-              <li><a href="http://thoughtbot.com">thoughtbot</a></li>
-              <li><a href="http://stridenyc.com">Stride </a></li>
-            </ul>
-          </section>
-          <section>
-            <h2>Clients</h2>
-            <ul>
-              <li>Planned Parenthood</li>
-              <li>Kickstarter</li>
-              <li>Groupon</li>
-              <li>Shutterstock</li>
-              <li>And more!</li>
-            </ul>
+            <section>
+              <h2>Employers</h2>
+              <ul>
+                <li><a href="http://libboo.com/">Libboo</a></li>
+                <li><a href="http://thoughtbot.com">thoughtbot</a></li>
+                <li><a href="http://stridenyc.com">Stride </a></li>
+              </ul>
+            </section>
+            <section>
+              <h2>Clients</h2>
+              <ul>
+                <li>Planned Parenthood</li>
+                <li>Kickstarter</li>
+                <li>Groupon</li>
+                <li>Shutterstock</li>
+                <li>And more!</li>
+              </ul>
+            </section>
           </section>
         </section>
       </section>
@@ -145,6 +149,10 @@ $powder-blue: #d9fcfc;
 $eighties-ski-jacket: #00c9c9;
 $teal: #0eeded;
 
+$background-green: #c7fcc9;
+$border-green: #03b209;
+$shadow-green: #04ed0c;
+
 a {
   color: $fuschia;
   text-decoration: none;
@@ -207,6 +215,15 @@ li {
   grid-column: 1;
   margin-top: 50px;
   padding-right: 50px;
+
+  ul {
+    margin-top: 0;
+    padding-left: 10px;
+  }
+
+  li {
+    line-height: 1.6em;
+  }
 }
 
 .main {
@@ -219,15 +236,15 @@ li {
   border-radius: 3px;
   box-shadow: 5px 6px 0px $pink;
   padding: 10px 12px;
+}
 
-  ul {
-    margin-top: 0;
-    padding-left: 10px;
-  }
-
-  li {
-    line-height: 1.6em;
-  }
+.employment {
+  background: $background-green;
+  border: 1px solid $border-green;
+  border-radius: 3px;
+  box-shadow: 5px 6px 0px $shadow-green;
+  margin-top: 40px;
+  padding: 10px 12px;
 }
 
 .points-of-interest {
