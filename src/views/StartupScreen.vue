@@ -91,6 +91,7 @@ p {
   color: orange;
   font-family: Halloween;
   font-size: 1.2em;
+  margin-top: 30px;
 
   @media only screen and (min-width: $mid-size-device-breakpoint) {
     font-size: 60px;
