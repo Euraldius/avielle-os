@@ -77,6 +77,14 @@ p {
   color: $text-white;
   padding-top: 100px;
   text-align: center;
+
+  h2 {
+    font-size: 1em;
+
+    @media only screen and (min-width: $mid-size-device-breakpoint) {
+      font-size: 1.5em;
+    }
+  }
 }
 
 #halloween-title {
