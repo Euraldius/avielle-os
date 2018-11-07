@@ -1,7 +1,7 @@
 <template>
   <finder>
     <div class="resume">
-      <header class="info-box header">
+      <info-box classes="header">
         <section>
           <h1>Hi! I'm <strong>Avielle Wolfe</strong></h1>
           <p><a href="mailto:aviellewolfe@pm.me">aviellewolfe@pm.me</a></p>
@@ -29,8 +29,8 @@
             And by keeping our technology choices simple for the sake of future developers.
           </p>
         </section>
-      </header>
-      <section class="info-box stats">
+      </info-box>
+      <info-box classes="stats">
         <section>
           <h2>Languages</h2>
           <ul>
@@ -56,8 +56,8 @@
             <li>Vue</li>
           </ul>
         </section>
-      </section>
-      <section class="info-box employment">
+      </info-box>
+      <info-box classes="employment">
         <section>
           <section>
             <h2>Employers</h2>
@@ -78,8 +78,8 @@
             </ul>
           </section>
         </section>
-      </section>
-      <section class="info-box points-of-interest">
+      </info-box>
+      <info-box classes="points-of-interest">
         <h2>Points of interest</h2>
         <section>
           <h3>Bathrooms for all!</h3>
@@ -105,7 +105,7 @@
             who assisted me and handled the response.
           </p>
         </section>
-      </section>
+      </info-box>
     </div>
   </finder>
 </template>
@@ -113,11 +113,13 @@
 <script>
 import moment from 'moment';
 import Finder from '@/components/Finder.vue';
+import InfoBox from '@/components/InfoBox.vue';
 
 export default {
   name: 'resume',
   components: {
     Finder,
+    InfoBox,
   },
   computed: {
     timeAsDeveloper: function timeAsDeveloper() {
@@ -201,10 +203,6 @@ li {
   @media only screen and (min-width: $mid-size-device-breakpoint) {
     grid-row-gap: 20px;
   }
-}
-
-.info-box {
-  padding: 10px 12px;
 }
 
 .header {

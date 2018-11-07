@@ -15,11 +15,12 @@ export default {
 
 .finder {
   @media only screen and (min-width: $mid-size-device-breakpoint) {
-    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
   }
 
   @media only screen and (min-width: $large-device-breakpoint) {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 50%;
   }
 }
