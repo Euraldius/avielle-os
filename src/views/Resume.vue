@@ -1,12 +1,14 @@
 <template>
   <finder>
-    <div class="resume">
-      <resume-header v-if="!showingClients" />
-      <kickstarter v-if="showingClients" />
-      <resume-stats v-if="!showingClients" />
-      <resume-clients v-if="showingClients" />
-      <employers v-if="!showingClients" />
-      <points-of-interest v-if="!showingClients" />
+    <div class="resume" v-if="!showingClients">
+      <resume-header />
+      <resume-stats />
+      <employers />
+      <points-of-interest />
+    </div>
+    <div class="resume" v-if="showingClients">
+      <resume-clients />
+      <kickstarter />
     </div>
   </finder>
 </template>
