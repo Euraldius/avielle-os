@@ -3,34 +3,8 @@
     <div class="resume">
       <resume-header v-if="!showingClients" />
       <kickstarter v-if="showingClients" />
-      <info-box classes="stats">
-        <section>
-          <h2>Languages</h2>
-          <ul>
-            <li>Ruby</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>PHP</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Web server frameworks</h2>
-          <ul>
-            <li>Ruby on Rails</li>
-            <li>Django</li>
-            <li>Node</li>
-            <li>Laravel</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Web client frameworks</h2>
-          <ul>
-            <li>React</li>
-            <li>Vue</li>
-          </ul>
-        </section>
-      </info-box>
-      <info-box classes="employment">
+      <resume-stats v-if="!showingClients" />
+      <info-box v-if="!showingClients" classes="employment">
         <section>
           <section>
             <h2>Employers</h2>
@@ -88,6 +62,7 @@ import moment from 'moment';
 import Finder from '@/components/Finder.vue';
 import InfoBox from '@/components/InfoBox.vue';
 import ResumeHeader from '@/components/Resume/Header.vue';
+import ResumeStats from '@/components/Resume/Stats.vue';
 import Kickstarter from '@/components/Resume/Kickstarter.vue';
 
 export default {
@@ -97,6 +72,7 @@ export default {
     InfoBox,
     ResumeHeader,
     Kickstarter,
+    ResumeStats,
   },
   data: function resumeData() {
     return {
