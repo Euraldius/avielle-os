@@ -1,7 +1,9 @@
 <template>
   <finder>
     <div class="resume" v-if="!showingClients">
-      <resume-header classes="header" />
+      <resume-header
+        classes="header"
+        v-on:see-clients="showingClients = true" />
       <resume-stats classes="stats" />
       <employers classes="employment" />
       <points-of-interest classes="points-of-interest" />
@@ -39,6 +41,11 @@ export default {
     return {
       showingClients: false,
     };
+  },
+  methods: {
+    seeClients: function seeClients() {
+      this.showingClients = true;
+    },
   },
 };
 </script>

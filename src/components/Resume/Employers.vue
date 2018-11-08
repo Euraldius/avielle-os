@@ -9,7 +9,7 @@
       </ul>
     </section>
     <section>
-      <h2><a v-on:click="showingClients = !showingClients">Clients</a></h2>
+      <h2>Clients</h2>
       <ul>
         <li>Planned Parenthood</li>
         <li>Kickstarter</li>

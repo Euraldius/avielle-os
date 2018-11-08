@@ -11,7 +11,8 @@
       <p>
         I've worked for <strong>3</strong> employers.<br/>
         <strong>2</strong> of those are consultancies.<br/>
-        Between the two, I've worked with <strong>15</strong> clients.
+        Between the two, I've worked with <strong>15</strong> clients.<br/>
+        <button class="link" v-on:click="$emit('see-clients')">See the details!</button>
       </p>
       <p>
         I'm practiced in <strong>Agile development</strong>,
@@ -59,5 +60,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/variables.scss';
 @import '@/assets/styles/info_boxes.scss';
+
+.link {
+  background:none;
+  border:none;
+  color: $fuschia;
+  font-size: 1em;
+  cursor: pointer;
+  padding:0;
+}
 </style>
