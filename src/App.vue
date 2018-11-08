@@ -22,6 +22,19 @@ a:hover {
   font-style: italic;
 }
 
+.link {
+  background:none;
+  border:none;
+  color: $fuschia;
+  font-size: 1em;
+  cursor: pointer;
+  padding:0;
+
+  &:hover {
+    font-style: italic;
+  }
+}
+
 h1 {
   color: black;
   font-stretch: condensed;

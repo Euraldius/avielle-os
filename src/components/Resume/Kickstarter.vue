@@ -1,5 +1,6 @@
 <template>
   <info-box classes="header purple-box">
+    <button class="link go-back" v-on:click="$emit('go-back')">Go back</button>
     <h2>Kickstarter</h2>
     <p>
       From January to April of 2018, I worked with a 5 person team to rebuild
@@ -39,4 +40,8 @@ export default {
 
 <style scoped lang="scss">
 @import '@/assets/styles/info_boxes.scss';
+
+.go-back {
+  margin-bottom: 20px;
+}
 </style>

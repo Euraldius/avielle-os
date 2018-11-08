@@ -10,7 +10,9 @@
     </div>
     <div class="resume" v-if="showingClients">
       <resume-clients classes="stats" />
-      <kickstarter classes="header" />
+      <kickstarter
+        classes="header"
+        v-on:go-back="showingClients = false" />
     </div>
   </finder>
 </template>

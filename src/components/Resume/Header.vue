@@ -62,13 +62,4 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/styles/variables.scss';
 @import '@/assets/styles/info_boxes.scss';
-
-.link {
-  background:none;
-  border:none;
-  color: $fuschia;
-  font-size: 1em;
-  cursor: pointer;
-  padding:0;
-}
 </style>
