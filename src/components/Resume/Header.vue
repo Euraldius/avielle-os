@@ -1,9 +1,9 @@
 <template>
-  <header>
-    <section>
+  <info-box classes="header">
+    <header>
       <h1>Hi! I'm <strong>Avielle Wolfe</strong></h1>
       <p><a href="mailto:aviellewolfe@pm.me">aviellewolfe@pm.me</a></p>
-    </section>
+    </header>
     <section>
       <p>
         I've spent <strong>{{ timeAsDeveloper }}</strong> working as a web developer.
@@ -27,11 +27,16 @@
         And by keeping our technology choices simple for the sake of future developers.
       </p>
     </section>
-  </header>
+  </info-box>
 </template>
 
 <script>
+import InfoBox from '@/components/InfoBox.vue';
+
 export default {
   name: 'resume-header',
+  components: {
+    InfoBox,
+  },
 };
 </script>

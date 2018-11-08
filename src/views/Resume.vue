@@ -1,9 +1,8 @@
 <template>
   <finder>
     <div class="resume">
-      <info-box classes="header">
-        <resume-header />
-      </info-box>
+      <resume-header v-if="!showingClients" />
+      <kickstarter v-if="showingClients" />
       <info-box classes="stats">
         <section>
           <h2>Languages</h2>
@@ -42,7 +41,7 @@
             </ul>
           </section>
           <section>
-            <h2>Clients</h2>
+            <h2><a v-on:click="showingClients = !showingClients">Clients</a></h2>
             <ul>
               <li>Planned Parenthood</li>
               <li>Kickstarter</li>
@@ -89,6 +88,7 @@ import moment from 'moment';
 import Finder from '@/components/Finder.vue';
 import InfoBox from '@/components/InfoBox.vue';
 import ResumeHeader from '@/components/Resume/Header.vue';
+import Kickstarter from '@/components/Resume/Kickstarter.vue';
 
 export default {
   name: 'resume',
@@ -96,6 +96,12 @@ export default {
     Finder,
     InfoBox,
     ResumeHeader,
+    Kickstarter,
+  },
+  data: function resumeData() {
+    return {
+      showingClients: false,
+    };
   },
   computed: {
     timeAsDeveloper: function timeAsDeveloper() {
