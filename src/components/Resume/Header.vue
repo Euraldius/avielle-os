@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="header">
+  <info-box classes="header purple-box">
     <header>
       <h1>Hi! I'm <strong>Avielle Wolfe</strong></h1>
       <p><a href="mailto:aviellewolfe@pm.me">aviellewolfe@pm.me</a></p>
@@ -40,3 +40,7 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+@import '@/assets/styles/info_boxes.scss';
+</style>

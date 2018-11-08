@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="header">
+  <info-box classes="header purple-box">
     <h2>Kickstarter</h2>
     <p>
       From January to April of 2018, I worked with a 5 person team to rebuild
@@ -36,3 +36,7 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+@import '@/assets/styles/info_boxes.scss';
+</style>

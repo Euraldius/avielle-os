@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="stats">
+  <info-box classes="stats pink-box">
     <section>
       <h2>Languages</h2>
       <ul>
@@ -38,3 +38,7 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+@import '@/assets/styles/info_boxes.scss';
+</style>

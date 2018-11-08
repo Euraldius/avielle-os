@@ -107,56 +107,28 @@ export default {
 }
 
 .header {
-  background: $lavender;
-  border-bottom: 1px solid $stolen-purple;
-  border-top: 1px solid $stolen-purple;
-
   @media only screen and (min-width: $mid-size-device-breakpoint) {
-    border: 1px solid $stolen-purple;
-    border-radius: 3px;
-    box-shadow: 5px 6px 0px $plum;
     grid-column: 2 / span 3;
     grid-row: 1;
   }
 }
 
 .stats {
-  background: $light-pink;
-  border-top: 1px solid $fuschia;
-  border-bottom: 1px solid $fuschia;
-
   @media only screen and (min-width: $mid-size-device-breakpoint) {
-    border: 1px solid $fuschia;
-    border-radius: 3px;
-    box-shadow: 5px 6px 0px $pink;
     grid-column: 1;
     grid-row: 1;
   }
 }
 
 .employment {
-  background: $background-green;
-  border-top: 1px solid $border-green;
-  border-bottom: 1px solid $border-green;
-
   @media only screen and (min-width: $mid-size-device-breakpoint) {
-    border: 1px solid $border-green;
-    border-radius: 3px;
-    box-shadow: 5px 6px 0px $shadow-green;
     grid-column: 1;
     grid-row: 2;
   }
 }
 
 .points-of-interest {
-  background: $powder-blue;
-  border-top: 1px solid $eighties-ski-jacket;
-  border-bottom: 1px solid $eighties-ski-jacket;
-
   @media only screen and (min-width: $mid-size-device-breakpoint) {
-    border: 1px solid $eighties-ski-jacket;
-    border-radius: 3px;
-    box-shadow: 5px 6px 0px $teal;
     grid-column: 2 / span 3;
     grid-row: 2;
   }
