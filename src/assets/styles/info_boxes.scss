@@ -1,0 +1,49 @@
+@import '@/assets/styles/variables.scss';
+
+.purple-box {
+  background: $lavender;
+  border-bottom: 1px solid $stolen-purple;
+  border-top: 1px solid $stolen-purple;
+
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    border: 1px solid $stolen-purple;
+    border-radius: 3px;
+    box-shadow: 5px 6px 0px $plum;
+  }
+}
+
+.pink-box {
+  background: $light-pink;
+  border-top: 1px solid $fuschia;
+  border-bottom: 1px solid $fuschia;
+
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    border: 1px solid $fuschia;
+    border-radius: 3px;
+    box-shadow: 5px 6px 0px $pink;
+  }
+}
+
+.green-box {
+  background: $background-green;
+  border-top: 1px solid $border-green;
+  border-bottom: 1px solid $border-green;
+
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    border: 1px solid $border-green;
+    border-radius: 3px;
+    box-shadow: 5px 6px 0px $shadow-green;
+  }
+}
+
+.blue-box {
+  background: $powder-blue;
+  border-top: 1px solid $eighties-ski-jacket;
+  border-bottom: 1px solid $eighties-ski-jacket;
+
+  @media only screen and (min-width: $mid-size-device-breakpoint) {
+    border: 1px solid $eighties-ski-jacket;
+    border-radius: 3px;
+    box-shadow: 5px 6px 0px $teal;
+  }
+}
