@@ -4,6 +4,7 @@
       <resume-header v-if="!showingClients" />
       <kickstarter v-if="showingClients" />
       <resume-stats v-if="!showingClients" />
+      <resume-clients v-if="showingClients" />
       <info-box v-if="!showingClients" classes="employment">
         <section>
           <section>
@@ -61,6 +62,7 @@
 import moment from 'moment';
 import Finder from '@/components/Finder.vue';
 import InfoBox from '@/components/InfoBox.vue';
+import ResumeClients from '@/components/Resume/Clients.vue';
 import ResumeHeader from '@/components/Resume/Header.vue';
 import ResumeStats from '@/components/Resume/Stats.vue';
 import Kickstarter from '@/components/Resume/Kickstarter.vue';
@@ -73,6 +75,7 @@ export default {
     ResumeHeader,
     Kickstarter,
     ResumeStats,
+    ResumeClients,
   },
   data: function resumeData() {
     return {
