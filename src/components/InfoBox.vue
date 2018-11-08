@@ -13,7 +13,7 @@
 export default {
   name: 'info-box',
   props: {
-    classes: Array,
+    classes: String,
   },
   computed: {
     infoBoxClasses: function infoBoxClasses() {

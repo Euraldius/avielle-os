@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="header purple-box">
+  <info-box v-bind:classes="infoBoxClasses">
     <header>
       <h1>Hi! I'm <strong>Avielle Wolfe</strong></h1>
       <p><a href="mailto:aviellewolfe@pm.me">aviellewolfe@pm.me</a></p>
@@ -31,12 +31,29 @@
 </template>
 
 <script>
+import moment from 'moment';
 import InfoBox from '@/components/InfoBox.vue';
 
 export default {
   name: 'resume-header',
   components: {
     InfoBox,
+  },
+  props: {
+    classes: String,
+  },
+  data: function headerData() {
+    return {
+      infoBoxClasses: `${this.classes} purple-box`,
+    };
+  },
+  computed: {
+    timeAsDeveloper: function timeAsDeveloper() {
+      const firstMonthAsDeveloper = new Date(2013, 6);
+      const now = moment();
+
+      return now.from(firstMonthAsDeveloper, true);
+    },
   },
 };
 </script>

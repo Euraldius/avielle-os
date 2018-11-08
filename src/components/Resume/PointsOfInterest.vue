@@ -1,5 +1,5 @@
 <template>
-  <info-box v-if="!showingClients" classes="points-of-interest blue-box">
+  <info-box v-bind:classes="infoBoxClasses">
     <h2>Points of interest</h2>
     <section>
       <h3>Bathrooms for all!</h3>
@@ -35,6 +35,14 @@ export default {
   name: 'points-of-interest',
   components: {
     InfoBox,
+  },
+  props: {
+    classes: String,
+  },
+  data: function headerData() {
+    return {
+      infoBoxClasses: `${this.classes} blue-box`,
+    };
   },
 };
 </script>

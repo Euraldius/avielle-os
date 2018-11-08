@@ -1,20 +1,19 @@
 <template>
   <finder>
     <div class="resume" v-if="!showingClients">
-      <resume-header />
-      <resume-stats />
-      <employers />
-      <points-of-interest />
+      <resume-header classes="header" />
+      <resume-stats classes="stats" />
+      <employers classes="employment" />
+      <points-of-interest classes="points-of-interest" />
     </div>
     <div class="resume" v-if="showingClients">
-      <resume-clients />
-      <kickstarter />
+      <resume-clients classes="stats" />
+      <kickstarter classes="header" />
     </div>
   </finder>
 </template>
 
 <script>
-import moment from 'moment';
 import Finder from '@/components/Finder.vue';
 import InfoBox from '@/components/InfoBox.vue';
 import ResumeClients from '@/components/Resume/Clients.vue';
@@ -41,20 +40,11 @@ export default {
       showingClients: false,
     };
   },
-  computed: {
-    timeAsDeveloper: function timeAsDeveloper() {
-      const firstMonthAsDeveloper = new Date(2013, 6);
-      const now = moment();
-
-      return now.from(firstMonthAsDeveloper, true);
-    },
-  },
 };
 </script>
 
 <style scoped lang="scss">
 @import '@/assets/styles/variables.scss';
-@import '@/assets/styles/info_boxes.scss';
 
 .resume {
   display: grid;

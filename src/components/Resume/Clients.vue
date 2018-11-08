@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="stats pink-box">
+  <info-box v-bind:classes="infoBoxClasses">
     <section>
       <h1>Clients</h1>
       <h2>thoughtbot</h2>
@@ -35,6 +35,14 @@ export default {
   name: 'resume-clients',
   components: {
     InfoBox,
+  },
+  props: {
+    classes: String,
+  },
+  data: function headerData() {
+    return {
+      infoBoxClasses: `${this.classes} pink-box`,
+    };
   },
 };
 </script>

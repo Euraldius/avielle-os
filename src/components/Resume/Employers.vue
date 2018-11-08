@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="employment green-box">
+  <info-box v-bind:classes="infoBoxClasses">
     <section>
       <h2>Employers</h2>
       <ul>
@@ -28,6 +28,14 @@ export default {
   name: 'employers',
   components: {
     InfoBox,
+  },
+  props: {
+    classes: String,
+  },
+  data: function headerData() {
+    return {
+      infoBoxClasses: `${this.classes} green-box`,
+    };
   },
 };
 </script>
