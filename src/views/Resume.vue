@@ -5,29 +5,8 @@
       <kickstarter v-if="showingClients" />
       <resume-stats v-if="!showingClients" />
       <resume-clients v-if="showingClients" />
-      <info-box v-if="!showingClients" classes="employment">
-        <section>
-          <section>
-            <h2>Employers</h2>
-            <ul>
-              <li><a href="http://libboo.com/">Libboo</a>&nbsp;(06.13 - 02.14)</li>
-              <li><a href="http://thoughtbot.com">thoughtbot</a>&nbsp;(06.14 - 04.18)</li>
-              <li><a href="http://stridenyc.com">Stride </a>&nbsp;(05.18 - now)</li>
-            </ul>
-          </section>
-          <section>
-            <h2><a v-on:click="showingClients = !showingClients">Clients</a></h2>
-            <ul>
-              <li>Planned Parenthood</li>
-              <li>Kickstarter</li>
-              <li>Groupon</li>
-              <li>Shutterstock</li>
-              <li><em>And more!</em></li>
-            </ul>
-          </section>
-        </section>
-      </info-box>
-      <info-box classes="points-of-interest">
+      <employer v-if="!showingClients" />
+      <info-box v-if="!showingClients" classes="points-of-interest blue-box">
         <h2>Points of interest</h2>
         <section>
           <h3>Bathrooms for all!</h3>
@@ -66,6 +45,7 @@ import ResumeClients from '@/components/Resume/Clients.vue';
 import ResumeHeader from '@/components/Resume/Header.vue';
 import ResumeStats from '@/components/Resume/Stats.vue';
 import Kickstarter from '@/components/Resume/Kickstarter.vue';
+import Employers from '@/components/Resume/Employers.vue';
 
 export default {
   name: 'resume',
@@ -76,6 +56,7 @@ export default {
     Kickstarter,
     ResumeStats,
     ResumeClients,
+    Employers,
   },
   data: function resumeData() {
     return {
@@ -95,6 +76,7 @@ export default {
 
 <style scoped lang="scss">
 @import '@/assets/styles/variables.scss';
+@import '@/assets/styles/info_boxes.scss';
 
 .resume {
   display: grid;
