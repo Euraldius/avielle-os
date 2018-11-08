@@ -111,66 +111,6 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/styles/variables.scss';
 
-$text-grey: #383737;
-
-$fuschia: #FF00FF;
-$light-pink: #f7c3f7;
-$pink: #fc3598;
-
-$stolen-purple: #a404f4;
-$plum: #932afc;
-$lavender: #dfc2fc;
-
-$powder-blue: #d9fcfc;
-$eighties-ski-jacket: #00c9c9;
-$teal: #0eeded;
-
-$background-green: #c7fcc9;
-$border-green: #03b209;
-$shadow-green: #04ed0c;
-
-a {
-  color: $fuschia;
-  text-decoration: none;
-}
-
-a:visited {
-  color: $stolen-purple;
-}
-
-a:hover {
-  font-style: italic;
-}
-
-h1 {
-  color: black;
-  font-stretch: condensed;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: black;
-  font-stretch: condensed;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-h3 {
-  color: black;
-  font-stretch: condensed;
-}
-
-ul {
-  margin-top: 0;
-  padding-left: 10px;
-}
-
-li {
-  line-height: 1.6em;
-  list-style: none;
-}
-
 .resume {
   display: grid;
   color: $text-grey;

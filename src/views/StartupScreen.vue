@@ -68,10 +68,6 @@ $text-white: #d1d0cf;
   src: url(../assets/fonts/halloween.woff);
 }
 
-p {
-  color: #d1d0cf;
-}
-
 .startup-screen {
   animation-name: startup;
   color: $text-white;
@@ -84,6 +80,10 @@ p {
     @media only screen and (min-width: $mid-size-device-breakpoint) {
       font-size: 1.5em;
     }
+  }
+
+  h2 {
+    color: #d1d0cf;
   }
 }
 

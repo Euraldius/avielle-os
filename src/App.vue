@@ -7,7 +7,49 @@
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+@import '@/assets/styles/variables.scss';
 
+a {
+  color: $fuschia;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $stolen-purple;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+h1 {
+  color: black;
+  font-stretch: condensed;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: black;
+  font-stretch: condensed;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: black;
+  font-stretch: condensed;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+li {
+  line-height: 1.6em;
+  list-style: none;
+}
 
 #app {
   -webkit-font-smoothing: antialiased;
