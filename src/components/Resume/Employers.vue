@@ -25,7 +25,7 @@
 import InfoBox from '@/components/InfoBox.vue';
 
 export default {
-  name: 'resume-employers',
+  name: 'employers',
   components: {
     InfoBox,
   },
