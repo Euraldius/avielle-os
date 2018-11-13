@@ -2,21 +2,21 @@
   <finder>
     <div class="clients">
       <client-list classes="client-list" />
-      <kickstarter classes="header" />
+      <client classes="header" />
     </div>
   </finder>
 </template>
 
 <script>
 import Finder from '@/components/Finder.vue';
-import ClientList from '@/components/Resume/Clients.vue';
-import Kickstarter from '@/components/Resume/Kickstarter.vue';
+import ClientList from '@/components/Clients/ClientList.vue';
+import Client from '@/components/Clients/Client.vue';
 
 export default {
   name: 'clients',
   components: {
     Finder,
-    Kickstarter,
+    Client,
     ClientList,
   },
 };

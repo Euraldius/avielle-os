@@ -23,5 +23,10 @@ export default new Router({
       name: 'clients',
       component: Clients,
     },
+    {
+      path: '/clients/:name',
+      name: 'client',
+      component: Clients,
+    },
   ],
 });

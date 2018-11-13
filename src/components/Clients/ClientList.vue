@@ -18,7 +18,7 @@
           <li>Planned Parenthood (09.17)</li>
           <li>Barkbox (09.17 - 12.17)</li>
           <li>Advocacy Institute x2! (01.18)</li>
-          <li>Kickstarter (02.18 - 04.18)</li>
+          <li><router-link to="clients/kickstarter">Kickstarter</router-link> (02.18 - 04.18)</li>
         </ul>
         <h2>Stride</h2>
         <ul>
@@ -32,7 +32,7 @@
 import InfoBox from '@/components/InfoBox.vue';
 
 export default {
-  name: 'resume-clients',
+  name: 'client-list',
   components: {
     InfoBox,
   },
