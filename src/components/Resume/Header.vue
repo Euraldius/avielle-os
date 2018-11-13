@@ -12,7 +12,7 @@
         I've worked for <strong>3</strong> employers.<br/>
         <strong>2</strong> of those are consultancies.<br/>
         Between the two, I've worked with <strong>15</strong> clients.<br/>
-        <button class="link" v-on:click="$emit('see-clients')">See the details!</button>
+        <router-link to="/clients">See the details!</router-link>
       </p>
       <p>
         I'm practiced in <strong>Agile development</strong>,

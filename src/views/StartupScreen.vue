@@ -43,7 +43,7 @@ export default {
       } else {
         clearInterval(interval);
 
-        router.push('home');
+        router.push('resume');
       }
     }, 1000);
   },

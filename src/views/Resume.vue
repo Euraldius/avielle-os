@@ -1,18 +1,10 @@
 <template>
   <finder>
-    <div class="resume" v-if="!showingClients">
-      <resume-header
-        classes="header"
-        v-on:see-clients="showingClients = true" />
+    <div class="resume">
+      <resume-header classes="header" />
       <resume-stats classes="stats" />
       <employers classes="employment" />
       <points-of-interest classes="points-of-interest" />
-    </div>
-    <div class="resume" v-if="showingClients">
-      <resume-clients classes="stats" />
-      <kickstarter
-        classes="header"
-        v-on:go-back="showingClients = false" />
     </div>
   </finder>
 </template>
@@ -20,10 +12,8 @@
 <script>
 import Finder from '@/components/Finder.vue';
 import InfoBox from '@/components/InfoBox.vue';
-import ResumeClients from '@/components/Resume/Clients.vue';
 import ResumeHeader from '@/components/Resume/Header.vue';
 import ResumeStats from '@/components/Resume/Stats.vue';
-import Kickstarter from '@/components/Resume/Kickstarter.vue';
 import Employers from '@/components/Resume/Employers.vue';
 import PointsOfInterest from '@/components/Resume/PointsOfInterest.vue';
 
@@ -33,21 +23,9 @@ export default {
     Finder,
     InfoBox,
     ResumeHeader,
-    Kickstarter,
     ResumeStats,
-    ResumeClients,
     Employers,
     PointsOfInterest,
-  },
-  data: function resumeData() {
-    return {
-      showingClients: false,
-    };
-  },
-  methods: {
-    seeClients: function seeClients() {
-      this.showingClients = true;
-    },
   },
 };
 </script>

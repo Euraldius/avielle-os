@@ -1,6 +1,6 @@
 <template>
   <info-box classes="header purple-box">
-    <button class="link go-back" v-on:click="$emit('go-back')">Go back</button>
+    <router-link class="go-back" to="/resume">Go back</router-link>
     <h2>Kickstarter</h2>
     <p>
       From January to April of 2018, I worked with a 5 person team to rebuild
