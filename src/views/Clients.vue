@@ -2,7 +2,7 @@
   <finder>
     <div class="clients">
       <client-list classes="client-list" />
-      <client classes="header" />
+      <client classes="header" :page="$route.params.name" />
     </div>
   </finder>
 </template>
