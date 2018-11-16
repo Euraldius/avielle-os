@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 .resume {
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   h1, h2 {
