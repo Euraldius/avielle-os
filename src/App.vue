@@ -36,20 +36,10 @@ a:hover {
 }
 
 h1 {
-  color: black;
-  font-stretch: condensed;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-h2 {
-  color: black;
-  font-stretch: condensed;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-h3 {
+h1, h2, h3 {
   color: black;
   font-stretch: condensed;
 }

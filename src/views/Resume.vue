@@ -30,6 +30,23 @@ export default {
 };
 </script>
 
+<style lang="scss">
+.resume {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  h1, h2 {
+    margin-top: 20px;
+  }
+
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+}
+</style>
+
 <style scoped lang="scss">
 @import '@/assets/styles/variables.scss';
 
