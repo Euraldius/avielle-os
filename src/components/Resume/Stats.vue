@@ -6,16 +6,14 @@
         <li>Ruby</li>
         <li>Javascript</li>
         <li>Python</li>
-        <li>PHP</li>
       </ul>
     </section>
     <section>
       <h2>Web server frameworks</h2>
       <ul>
         <li>Ruby on Rails</li>
-        <li>Django</li>
         <li>Node</li>
-        <li>Laravel</li>
+        <li>Django</li>
       </ul>
     </section>
     <section>
@@ -24,6 +22,14 @@
         <li>React</li>
         <li>Vue</li>
       </ul>
+    </section>
+      <h2>Practices</h2>
+      <ul>
+        <li>Agile</li>
+        <li>TDD</li>
+        <li>XP</li>
+      </ul>
+    <section>
     </section>
   </info-box>
 </template>
