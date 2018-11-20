@@ -1,12 +1,18 @@
 <template>
   <div class="finder">
+    <star-field />
     <slot></slot>
   </div>
 </template>
 
 <script>
+import StarField from '@/components/StarField.vue';
+
 export default {
   name: 'finder',
+  components: {
+    StarField,
+  },
 };
 </script>
 
