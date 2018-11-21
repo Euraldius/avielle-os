@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '@/assets/styles/variables.scss';
 
 @keyframes scrollIn {
@@ -48,6 +48,11 @@ export default {
 .info-box {
   padding: 10px 12px;
   position: relative;
+
+  p {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
 }
 
 .height-preserver {

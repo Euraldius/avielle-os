@@ -3,7 +3,10 @@
     <p>Select a client from the menu to see details of that client.</p>
     <h2>Some particularly interesting clients may be:</h2>
     <ul>
-      <li>Kickstarter</li>
+      <li><router-link to="/clients/kickstarter">Kickstarter</router-link></li>
+      <li><router-link to="/clients/kickstarter">Advocacy Institute</router-link></li>
+      <li><router-link to="/clients/kickstarter">panOpen</router-link></li>
+      <li><router-link to="/clients/kickstarter">Shutterstock</router-link></li>
     </ul>
   </section>
 </template>
