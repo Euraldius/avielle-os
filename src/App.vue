@@ -9,6 +9,12 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 @import '@/assets/styles/variables.scss';
 
+@font-face {
+  font-family: Halloween;
+  font-weight: bold;
+  src: url(./assets/fonts/halloween.woff);
+}
+
 a {
   color: $fuschia;
   text-decoration: none;
@@ -59,7 +65,11 @@ li {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Karla', sans-serif;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
+    font-family: Halloween;
+  }
+
+  h2, h3, h4, h5, h6 {
     font-family: 'Archivo Narrow', sans-serif;
   }
 }

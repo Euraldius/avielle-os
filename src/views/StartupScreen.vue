@@ -62,12 +62,6 @@ $text-white: #d1d0cf;
   100% { opacity: 0; }
 }
 
-@font-face {
-  font-family: Halloween;
-  font-weight: bold;
-  src: url(../assets/fonts/halloween.woff);
-}
-
 .startup-screen {
   animation-name: startup;
   color: $text-white;
@@ -89,7 +83,6 @@ $text-white: #d1d0cf;
 
 #halloween-title {
   color: orange;
-  font-family: Halloween;
   font-size: 1.2em;
   margin-top: 30px;
 
