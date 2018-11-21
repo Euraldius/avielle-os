@@ -4,17 +4,26 @@ $large-device-breakpoint: 1920px;
 $text-grey: #383737;
 
 $fuschia: #FF00FF;
-$light-pink: #f7c3f7;
 $pink: #fc3598;
 
 $stolen-purple: #a404f4;
 $plum: #932afc;
-$lavender: #dfc2fc;
 
-$powder-blue: #d9fcfc;
 $eighties-ski-jacket: #00c9c9;
 $teal: #0eeded;
 
-$background-green: #c7fcc9;
+$background-pink: #fce5fc;
+$border-pink: $fuschia;
+$shadow-pink: $pink;
+
+$background-purple: #f3eafc;
+$border-purple: $stolen-purple;
+$shadow-purple: $plum;
+
+$background-blue: #eafcfc;
+$border-blue: $eighties-ski-jacket;
+$shadow-blue: $teal;
+
+$background-green: #edfced;
 $border-green: #03b209;
 $shadow-green: #04ed0c;
