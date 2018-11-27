@@ -9,13 +9,13 @@
       </ul>
     </section>
     <section>
-      <h2>Clients</h2>
+      <h2><router-link to="/clients">Clients</router-link></h2>
       <ul>
-        <li>Planned Parenthood</li>
-        <li>Kickstarter</li>
-        <li>Groupon</li>
-        <li>Shutterstock</li>
-        <li><em>And more!</em></li>
+        <li><router-link to="/clients/kickstarter">Kickstarter</router-link></li>
+        <li><router-link to="/clients/advocacy-institute">Advocacy Institute</router-link></li>
+        <li><router-link to="/clients/panopen">panOpen</router-link></li>
+        <li><router-link to="/clients/shutterstock">Shutterstock</router-link></li>
+        <li><em><router-link to="/clients">And more!</router-link></em></li>
       </ul>
     </section>
   </info-box>

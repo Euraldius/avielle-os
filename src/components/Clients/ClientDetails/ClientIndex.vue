@@ -4,9 +4,9 @@
     <h2>Some particularly interesting clients may be:</h2>
     <ul>
       <li><router-link to="/clients/kickstarter">Kickstarter</router-link></li>
-      <li><router-link to="/clients/kickstarter">Advocacy Institute</router-link></li>
-      <li><router-link to="/clients/kickstarter">panOpen</router-link></li>
-      <li><router-link to="/clients/kickstarter">Shutterstock</router-link></li>
+      <li><router-link to="/clients/advocacy-institute">Advocacy Institute</router-link></li>
+      <li><router-link to="/clients/panopen">panOpen</router-link></li>
+      <li><router-link to="/clients/shutterstock">Shutterstock</router-link></li>
     </ul>
   </section>
 </template>
