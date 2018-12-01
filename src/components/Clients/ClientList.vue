@@ -49,7 +49,7 @@ export default {
   },
   data: function headerData() {
     return {
-      infoBoxClasses: `${this.classes} pink-box`,
+      infoBoxClasses: `${this.classes} blue-box`,
     };
   },
 };

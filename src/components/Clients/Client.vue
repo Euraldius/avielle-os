@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="header purple-box">
+  <info-box classes="header pink-box">
     <router-link class="go-back" to="/resume">Back to resume</router-link>
     <hr />
     <component :is="page || 'client-index'" />

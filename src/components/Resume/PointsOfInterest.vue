@@ -41,7 +41,7 @@ export default {
   },
   data: function headerData() {
     return {
-      infoBoxClasses: `${this.classes} blue-box`,
+      infoBoxClasses: `${this.classes} purple-box`,
     };
   },
 };

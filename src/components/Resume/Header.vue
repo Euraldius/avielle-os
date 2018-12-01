@@ -45,7 +45,7 @@ export default {
   },
   data: function headerData() {
     return {
-      infoBoxClasses: `${this.classes} purple-box`,
+      infoBoxClasses: `${this.classes} pink-box`,
     };
   },
   computed: {

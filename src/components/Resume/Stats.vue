@@ -1,5 +1,5 @@
 <template>
-  <info-box classes="stats pink-box">
+  <info-box classes="stats blue-box">
     <section>
       <h2>Languages</h2>
       <ul>
