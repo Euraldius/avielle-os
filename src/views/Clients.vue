@@ -42,7 +42,7 @@ export default {
   }
 }
 
-.header {
+.client {
   @media only screen and (min-width: $mid-size-device-breakpoint) {
     grid-column: 2 / span 3;
     grid-row: 1;

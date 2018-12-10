@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  MID_SIZE_DEVICE_BREAKPOINT: 600, // px
+};
+</script>
+
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
