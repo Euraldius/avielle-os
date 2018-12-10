@@ -1,14 +1,3 @@
-<template>
-  <section :class="infoBoxClasses">
-    <div class="content-animation-container">
-      <slot />
-    </div>
-    <div class="height-preserver">
-      <slot />
-    </div>
-  </section>
-</template>
-
 <script>
 export default {
   name: 'info-box',
@@ -19,6 +8,21 @@ export default {
     infoBoxClasses: function infoBoxClasses() {
       return `info-box ${this.classes}`;
     },
+  },
+  render: function render(createElement) {
+    const content = this.$slots.default;
+    const heightPreserverContent = this.$slots.default;
+
+    return createElement(
+      'section',
+      {
+        class: this.infoBoxClasses,
+      },
+      [
+        createElement('div', { class: 'content-animation-container' }, content),
+        createElement('div', { class: 'height-preserver' }, heightPreserverContent),
+      ],
+    );
   },
 };
 </script>
