@@ -5,7 +5,7 @@
       <ul>
         <li><a href="http://libboo.com/">Libboo</a>&nbsp;(06.13 - 02.14)</li>
         <li><a href="http://thoughtbot.com">thoughtbot</a>&nbsp;(06.14 - 04.18)</li>
-        <li><a href="http://stridenyc.com">Stride </a>&nbsp;(05.18 - now)</li>
+        <li><a href="http://stridenyc.com">Stride </a>&nbsp;(05.18 - 02.19)</li>
       </ul>
     </section>
     <section>
