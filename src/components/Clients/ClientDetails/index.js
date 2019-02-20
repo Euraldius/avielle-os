@@ -16,3 +16,4 @@ export { default as Barkbox } from './Barkbox.vue';
 export { default as AdvocacyInstitute2 } from './AdvocacyInstitute2.vue';
 export { default as Kickstarter } from './Kickstarter.vue';
 export { default as Joor } from './Joor.vue';
+export { default as TwoU } from './TwoU.vue';

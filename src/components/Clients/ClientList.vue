@@ -47,6 +47,7 @@
         </li>
         <h2>Stride</h2>
         <li><a data-client="joor" v-on:click="showClient">JOOR</a> (05.18 - 10.18)</li>
+        <li><a data-client="two-u" v-on:click="showClient">2U</a> (11.18 - 02.19)</li>
       </ul>
     </info-box>
   </nav>
