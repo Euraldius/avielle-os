@@ -3,7 +3,7 @@
     <Moon />
     <h1 id="halloween-title">Wolfe Howls at Moon <span class="os">OS</span></h1>
     <h2><em>Version: 6.66</em></h2>
-    <h2><em>Ni dios, ni jefes, ni maridos</em></h2>
+    <h2><em>Ni gods, no masters</em></h2>
   </div>
 </template>
 
