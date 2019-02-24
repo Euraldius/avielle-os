@@ -8,15 +8,13 @@
     <section>
       <h3>No justice, no peace.</h3>
       <p>
-      I authored thoughtbot's <a href="https://robots.thoughtbot.com/reaction-to-executive-order-13769">response to Executive Order 13769</a>.
-      It was published anonymously to protect me from the less tolerant parts of
-      the Internet. (Verification can be provided upon request.)
+        I authored thoughtbot's <a href="https://robots.thoughtbot.com/reaction-to-executive-order-13769">response to Executive Order 13769</a>.
       </p>
     </section>
     <section>
       <h3>factory_bot</h3>
       <p>
-      I renamed factory_girl to factory_bot.<br/>
+        I renamed factory_girl to factory_bot.<br/>
       <br/>
       <a href="https://github.com/thoughtbot/factory_bot/pull/1051">https://github.com/thoughtbot/factory_bot/pull/1051</a><br/>
       <a href="https://robots.thoughtbot.com/factory_bot">https://robots.thoughtbot.com/factory_bot</a><br/>
